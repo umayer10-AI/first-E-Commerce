@@ -33,7 +33,6 @@ export default function SmoothScroll({ children }) {
       });
     };
 
-    // Attach scroll listener and trigger multiple progressive checks for robust render sync
     lenis.on('scroll', handleScroll);
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleScroll);
