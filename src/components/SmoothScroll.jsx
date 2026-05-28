@@ -37,7 +37,6 @@ export default function SmoothScroll({ children }) {
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleScroll);
 
-    // Initial triggers at intervals to sync with DOM hydration and static renders
     handleScroll();
     const t1 = setTimeout(handleScroll, 50);
     const t2 = setTimeout(handleScroll, 200);
