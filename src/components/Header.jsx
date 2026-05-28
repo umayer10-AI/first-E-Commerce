@@ -21,7 +21,6 @@ export default function Header() {
         setTheme(storedTheme);
         
         if (storedTheme === 'dark') {
-          
           document.documentElement.classList.add('dark');
         } else {
           document.documentElement.classList.remove('dark');
