@@ -12,10 +12,8 @@ export default function Header() {
   const { cartCount, setIsCartOpen } = useCart();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
-  // Theme state: 'light' | 'dark'
   const [theme, setTheme] = useState('light');
 
-  // Hydrate theme from localStorage or system preference upon mount
   useEffect(() => {
     try {
       const storedTheme = localStorage.getItem('brf_theme');
