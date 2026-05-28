@@ -19,6 +19,7 @@ export default function Header() {
       const storedTheme = localStorage.getItem('brf_theme');
       if (storedTheme) {
         setTheme(storedTheme);
+        
         if (storedTheme === 'dark') {
           document.documentElement.classList.add('dark');
         } else {
