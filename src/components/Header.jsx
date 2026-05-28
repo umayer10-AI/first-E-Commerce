@@ -36,7 +36,8 @@ export default function Header() {
           document.documentElement.classList.remove('dark');
         }
       }
-    } catch (e) {
+    } 
+    catch (e) {
       console.error('Failed to sync theme preference:', e);
     }
   }, []);
