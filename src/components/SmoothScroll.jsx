@@ -22,7 +22,6 @@ export default function SmoothScroll({ children }) {
     }
     animationFrameId = requestAnimationFrame(raf);
 
-    // Dynamic scroll reveals selector support
     const handleScroll = () => {
       const reveals = document.querySelectorAll('.reveal-on-scroll');
       reveals.forEach((element) => {
