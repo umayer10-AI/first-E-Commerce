@@ -21,7 +21,7 @@ export default function Header() {
         setTheme(storedTheme);
         
         if (storedTheme === 'dark') {
-          
+
           document.documentElement.classList.add('dark');
         } else {
           document.documentElement.classList.remove('dark');
@@ -36,7 +36,8 @@ export default function Header() {
           document.documentElement.classList.remove('dark');
         }
       }
-    } catch (e) {
+    } 
+    catch (e) {
       console.error('Failed to sync theme preference:', e);
     }
   }, []);
